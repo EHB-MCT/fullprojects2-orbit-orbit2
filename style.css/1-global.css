@@ -5,4 +5,42 @@
 @import url("4-textbox.css");
 @import url("5-labyrinth.css");
 @import url("6-footer.css");
+@import url("7-responsive.css");
+@import url("8-hexagone");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.hero h1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 96px;
+    font-weight: 600;
+}
+.hero p {
+    font-size: 24px;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 64px;
+    color: #fff;
+}
+.burgundy {
+    padding-left: 250px;
+    padding-top: 85px;
+    color: #93132A;
+}
 
