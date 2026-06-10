@@ -9,6 +9,8 @@
     padding: 20px;
     background-color: #fff;
     overflow-x: hidden;
+    position: fixed;
+    z-index: 3;
 }
 
 .navigation li {

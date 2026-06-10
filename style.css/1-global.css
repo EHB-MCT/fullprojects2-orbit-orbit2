@@ -6,7 +6,7 @@
 @import url("5-labyrinth.css");
 @import url("6-footer.css");
 @import url("7-responsive.css");
-@import url("8-hexagone");
+@import url("8-hexagone.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -20,7 +20,7 @@ body {
 }
 
 .hero h1 {
-    padding-top: 40px;
+    padding-top: 100px;
     padding-bottom: 40px;
     font-size: 96px;
     font-weight: 600;
@@ -37,10 +37,27 @@ body {
 h1 {
     font-size: 64px;
     color: #fff;
+    margin: 0;
 }
 .burgundy {
     padding-left: 250px;
-    padding-top: 85px;
+    padding-top: 120px;
     color: #93132A;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    width: 48%;
+    padding-bottom: 100px;
+}
+.item img {
+    width: 700px;
+
 }
 
