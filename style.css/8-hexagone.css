@@ -1,28 +1,22 @@
 .hexagone1 {
-    background-color: #f5333f;
-    margin-top: 0;
-    min-height: 750px;
-    clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - 90px),
-    50% 100%,
-    0 calc(100% - 90px)
-    );
-    padding-top: 150px;
+	background-color: #f5333f;
+	margin-top: 0;
+	min-height: 750px;
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 120px), 50% 100%, 0 calc(100% - 120px));
+	padding-top: 150px;
 }
 
 .hexagone2 {
-    background-color: #ffc629;
-    min-height: 3000px;
+	background-color: #ffc629;
+	min-height: 3200px;
 
-    clip-path: polygon(
-        0 90px,
-        50% 0,
-        100% 90px,
-        100% calc(100% - 90px),
-        50% 100%,
-        0 calc(100% - 90px)
-    );
-    padding-top: 150px;
+	clip-path: polygon(0 120px, 50% 0, 100% 120px, 100% calc(100% - 120px), 50% 100%, 0 calc(100% - 120px));
+	padding-top: 150px;
+}
+
+.hexagone3 {
+	background-color: #f5333f;
+	min-height: 550px;
+	clip-path: polygon(0 120px, 50% 0, 100% 120px, 100% 100%, 0 100%);
+	margin-top: -450px;
 }

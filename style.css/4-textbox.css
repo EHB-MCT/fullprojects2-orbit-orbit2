@@ -1,32 +1,61 @@
 .textbox {
-    position: relative;
-    background-color: white;
-    padding: 20px;
-    max-width: 600px;
-    color: black;
-    padding-left: 80px;
-    margin-top: 100px;
+	position: relative;
+	background-color: white;
+	padding: 20px;
+	max-width: 600px;
+	color: black;
+	padding-left: 80px;
+	margin-top: 100px;
 }
 
 .themas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 30px;
 }
 
 .themas img {
-    width: 350px;
+	width: 350px;
 }
 
 .thema {
-    text-align: center;
-    background-color: white;
-    color: black;
+	text-align: center;
+	background-color: white;
+	color: black;
+}
+
+.thema div {
+	margin-top: -4px;
 }
 
 .thema h2 {
-    background-color: #f5333f;
-    color: #FFC629;
-    height: 80px;
+	background-color: #f5333f;
+	color: #ffc629;
+	padding: 30px;
+	margin: 0;
+}
+.thema a {
+	text-decoration: none;
+}
+
+.green h2 {
+	background-color: #249e33;
+}
+
+.eindzin {
+	font-weight: 600;
+	text-align: center;
+	padding-top: 150px;
+	line-height: 30px;
+}
+
+.material-symbols-1 {
+	color: black;
+	font-size: 20px !important;
+}
+
+.material-symbols-outlined {
+	color: black;
+	font-size: 14px !important;
 }
