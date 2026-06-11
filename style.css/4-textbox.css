@@ -40,8 +40,26 @@
 	text-decoration: none;
 }
 
+.begraven h2 {
+	background-color: #f5333f;
+	padding: 15px;
+}
+
 .green h2 {
 	background-color: #249e33;
+}
+
+.Armoede h1 {
+	color: #f5333f;
+	padding-top: 200px;
+	font-weight: bold;
+	font-size: 56px;
+}
+
+.Armoede p {
+	color: black;
+	padding-left: 10%;
+	padding-top: 20px;
 }
 
 .eindzin {

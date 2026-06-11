@@ -10,6 +10,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	width: 100%;
 	margin: 0;
@@ -75,5 +79,40 @@ h1 {
 	padding-bottom: 100px;
 }
 .item img {
-	width: 700px;
+	width: 100%;
+}
+
+/*.Armoede {
+	justify-content: space-around;
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.Armoede img {
+	align-items: right;
+	width: 600px;
+	padding-left: 700px;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-around;
+} */
+
+.Armoede-I h1 {
+	color: #93132a;
+	padding-bottom: 50px;
+}
+
+.Armoede-I p {
+	color: black;
+}
+
+.ecologie h1 {
+	color: #ffc629;
+	padding-bottom: 50px;
+}
+.wrapper2 {
+	justify-content: space-between;
+	display: flex;
+	margin: 0 auto;
+	width: 90%;
 }

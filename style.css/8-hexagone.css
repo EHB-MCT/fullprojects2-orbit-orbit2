@@ -19,4 +19,12 @@
 	min-height: 650px;
 	clip-path: polygon(0 120px, 50% 0, 100% 120px, 100% 100%, 0 100%);
 	margin-top: -450px;
+	align-items: center;
+}
+
+.hexagone4 {
+	background-color: #249e33;
+	clip-path: polygon(0 120px, 50% 0, 100% 120px, 100% calc(100% - 120px), 50% 100%, 0 calc(100% - 120px));
+	padding-top: 100px;
+	width: 100%;
 }
