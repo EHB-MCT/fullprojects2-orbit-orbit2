@@ -1,0 +1,622 @@
+/* 7-responsive.css */
+
+html,
+body {
+	max-width: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.wrapper,
+.wrapper2,
+.info {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.kaart {
+	width: 100%;
+	max-width: 1200px;
+}
+
+/* HEXAGONS */
+body .hexagone1 {
+	min-height: 750px;
+	padding-bottom: 140px;
+}
+
+body .hexagone2 {
+	position: relative;
+	min-height: auto;
+	padding: 180px 0;
+	background-color: #ffc629;
+	clip-path: polygon(0 120px, 50% 0, 100% 120px, 100% 100%, 0 100%);
+}
+
+footer {
+	margin-top: auto;
+	background-color: #ffc629;
+}
+
+body .hexagone3 {
+	position: relative;
+	min-height: auto;
+	padding: 160px 0 90px;
+	background-color: #ee3442;
+	clip-path: none;
+	overflow: visible;
+}
+
+body .hexagone3::before {
+	content: "";
+	position: absolute;
+	top: -120px;
+	left: 0;
+	width: 100%;
+	height: 122px;
+	background-color: #ee3442;
+	clip-path: polygon(0 100%, 50% 0, 100% 100%);
+	z-index: 0;
+}
+
+body .hexagone3 > * {
+	position: relative;
+	z-index: 1;
+}
+
+body .hexagone4 {
+	min-height: auto;
+	padding: 160px 0;
+	background-color: #249e33;
+}
+
+.extra {
+	margin: 0;
+	padding: 30px 5%;
+	background-color: white;
+	color: black;
+	text-align: center;
+}
+
+.extra a {
+	color: black;
+}
+
+/* Hide broken material-symbol text */
+.navigation span {
+	display: none;
+}
+
+.nav-toggle,
+.hamburger {
+	display: none;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+	body .hero {
+		gap: 35px;
+	}
+
+	body .hero h1 {
+		font-size: 56px;
+	}
+
+	body .hero p {
+		font-size: 20px;
+	}
+
+	.item {
+		width: 48%;
+	}
+
+	.textbox {
+		max-width: 100%;
+		padding-left: 40px;
+	}
+
+	.wrapper2 {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 40px;
+	}
+
+	.burgundy {
+		margin-left: 5%;
+		font-size: 48px;
+	}
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+	.navigation {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 20;
+		width: 100%;
+		min-height: 88px;
+		height: auto;
+		padding: 14px 22px;
+		overflow: visible;
+		background: white;
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		border: none;
+		box-shadow: none;
+	}
+
+	.navigation > a:first-child {
+		display: flex;
+		align-items: center;
+	}
+
+	.logo {
+		width: 135px;
+		height: auto;
+		padding-left: 0;
+	}
+
+	.hamburger {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: auto;
+		width: 42px;
+		height: 42px;
+		font-size: 34px;
+		line-height: 1;
+		color: black;
+		cursor: pointer;
+		z-index: 22;
+	}
+
+	.navigation nav {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		padding: 16px 0 12px;
+		background-color: white;
+		border: none;
+		box-shadow: none;
+	}
+
+	.nav-toggle:checked ~ nav {
+		display: block;
+	}
+
+	.navigation ul {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 13px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.navigation li {
+		width: 100%;
+		display: block;
+		padding: 0;
+		text-align: center;
+	}
+
+	.navigation a {
+		display: block;
+		width: 100%;
+		font-size: 16px;
+		font-weight: 800;
+		letter-spacing: 0.02em;
+	}
+
+	/* HERO MOBILE */
+	body .hexagone1 {
+		min-height: auto;
+		padding-top: 120px;
+		padding-bottom: 0;
+		clip-path: polygon(
+			0 0,
+			100% 0,
+			100% calc(100% - 95px),
+			50% 100%,
+			0 calc(100% - 95px)
+		);
+	}
+
+	body .hero {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		max-width: none;
+		gap: 35px;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	body .hero-text {
+		width: 100%;
+		max-width: 360px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	body .hero-img {
+		width: 100vw;
+		max-width: none;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		margin: 0 calc(50% - 50vw);
+		overflow: hidden;
+		clip-path: polygon(
+			0 0,
+			100% 0,
+			100% calc(100% - 95px),
+			50% 100%,
+			0 calc(100% - 95px)
+		);
+	}
+
+	body .hero img {
+		width: 100vw;
+		max-width: none;
+		min-width: 0;
+		margin: 0 auto;
+	}
+
+	body .hero h1 {
+		font-size: clamp(48px, 15vw, 64px);
+		line-height: 1;
+		padding: 20px 0 28px;
+		margin: 0 auto;
+	}
+
+	body .hero p {
+		max-width: 330px;
+		margin: 0 auto 24px;
+		font-size: 20px;
+		line-height: 1.28;
+	}
+
+	/* YELLOW SECTION */
+	body .hexagone2 {
+		padding: 130px 0;
+	}
+
+	body .hexagone2 .wrapper {
+		width: 100%;
+		max-width: none;
+	}
+
+	.content,
+	.wrapper2,
+	.waarom,
+	.info,
+	.themas {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.content {
+		gap: 16px;
+		width: 100%;
+	}
+
+	.content .item {
+		width: 100%;
+		max-width: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.content .item:nth-child(1) {
+		order: 1;
+		margin-bottom: 8px;
+	}
+
+	.content .item:nth-child(2) {
+		order: 2;
+		margin-bottom: 80px;
+	}
+
+	.content .item:nth-child(4) {
+		order: 3;
+		margin-bottom: 8px;
+	}
+
+	.content .item:nth-child(3) {
+		order: 4;
+		margin-bottom: 80px;
+	}
+
+	.content .item:nth-child(5) {
+		order: 5;
+		margin-bottom: 8px;
+	}
+
+	.content .item:nth-child(6) {
+		order: 6;
+		margin-bottom: 180px;
+	}
+
+	.content .item h1,
+	.waarom h1 {
+		width: 100%;
+		margin: 0 auto 20px;
+		padding: 0;
+		font-size: 48px;
+		line-height: 1;
+		text-align: center;
+	}
+
+	.textbox {
+		width: 82vw;
+		max-width: 500px;
+		margin: 0 auto;
+		padding: 28px;
+		background-color: white;
+		color: black;
+	}
+
+	.textbox p {
+		padding: 0;
+		margin: 0;
+		font-size: 18px;
+		line-height: 1.45;
+		text-align: left;
+	}
+
+	.content .item img {
+		width: 82vw;
+		max-width: 520px;
+		min-width: 0;
+		margin: 0 auto;
+	}
+
+	.waarom {
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.hero p br,
+	.textbox br,
+	.item p br,
+	.thema p br,
+	.eindzin br {
+		display: none;
+	}
+
+	h1 {
+		font-size: 38px;
+		text-align: center;
+	}
+
+	.burgundy {
+		margin-left: 0;
+		padding-top: 60px;
+		font-size: 34px;
+		justify-content: center;
+	}
+
+	/* FOCUS CARDS */
+	.themas {
+		gap: 55px;
+	}
+
+	.thema {
+		width: 86vw;
+		max-width: 360px;
+	}
+
+	.themas img {
+		width: 100%;
+		height: auto;
+	}
+
+	.thema h2 {
+		padding: 22px;
+		font-size: 22px;
+	}
+
+	.thema p {
+		padding: 20px;
+		margin: 0;
+		font-size: 16px;
+		line-height: 1.35;
+	}
+
+	.Armoede h1,
+	.Armoede-I h1 {
+		padding-top: 80px;
+		font-size: 30px;
+		line-height: 1.15;
+	}
+
+	.Armoede p,
+	.Armoede-I p,
+	.ecologie p,
+	.item p {
+		font-size: 16px;
+		line-height: 1.6;
+	}
+
+	/* FOOTER */
+	body .hexagone3 {
+		padding-top: 130px;
+		padding-bottom: 90px;
+	}
+
+	body .hexagone3::before {
+		top: -90px;
+		height: 92px;
+	}
+
+	body .hexagone4 {
+		padding: 130px 0;
+	}
+
+	.info {
+		gap: 30px;
+		padding-top: 40px;
+		text-align: center;
+	}
+
+	footer img {
+		height: auto;
+		max-width: 220px;
+	}
+
+	.vlaanderen img,
+	.contact img {
+		height: auto;
+		max-width: 180px;
+	}
+
+	.contact h2 {
+		font-size: 36px;
+	}
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+	.navigation {
+		min-height: 82px;
+		padding: 13px 20px;
+	}
+
+	.navigation nav {
+		padding: 14px 0 10px;
+	}
+
+	.navigation ul {
+		gap: 12px;
+	}
+
+	.logo {
+		width: 125px;
+	}
+
+	.hamburger {
+		width: 40px;
+		height: 40px;
+		font-size: 33px;
+	}
+
+	body .hexagone1 {
+		padding-top: 112px;
+	}
+
+	body .hero-text {
+		max-width: 330px;
+	}
+
+	body .hero h1 {
+		font-size: clamp(46px, 14vw, 58px);
+	}
+
+	body .hero p {
+		max-width: 300px;
+		font-size: 19px;
+	}
+
+	body .hero-img {
+		clip-path: polygon(
+			0 0,
+			100% 0,
+			100% calc(100% - 75px),
+			50% 100%,
+			0 calc(100% - 75px)
+		);
+	}
+
+	h1 {
+		font-size: 31px;
+	}
+
+	.burgundy {
+		font-size: 28px;
+	}
+
+	.content {
+		gap: 14px;
+	}
+
+	.content .item:nth-child(1),
+	.content .item:nth-child(4),
+	.content .item:nth-child(5) {
+		margin-bottom: 8px;
+	}
+
+	.content .item:nth-child(2),
+	.content .item:nth-child(3) {
+		margin-bottom: 68px;
+	}
+
+	.content .item:nth-child(6) {
+		margin-bottom: 175px;
+	}
+
+	.content .item h1,
+	.waarom h1 {
+		margin-bottom: 18px;
+		font-size: 44px;
+	}
+
+	.textbox {
+		width: 84vw;
+		padding: 24px;
+	}
+
+	.textbox p {
+		font-size: 17px;
+		line-height: 1.45;
+	}
+
+	.content .item img {
+		width: 84vw;
+		max-width: none;
+	}
+
+	.themas {
+		gap: 45px;
+	}
+
+	.thema {
+		width: 84vw;
+		max-width: 340px;
+	}
+
+	.thema h2 {
+		padding: 20px;
+		font-size: 22px;
+	}
+
+	.Armoede h1,
+	.Armoede-I h1 {
+		font-size: 28px;
+		line-height: 1.15;
+	}
+}
