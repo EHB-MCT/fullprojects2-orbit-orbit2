@@ -1,0 +1,34 @@
+.info {
+	width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding-left: 300px;
+	padding-top: 100px;
+}
+footer img {
+	height: 300px;
+}
+
+.vlaanderen img {
+	height: 120px;
+}
+.contact img {
+	height: 150px;
+}
+.contact {
+	line-height: 30px;
+}
+.contact h2 {
+	font-size: 48px;
+}
+
+.extra {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.extra a {
+	color: white;
+}
