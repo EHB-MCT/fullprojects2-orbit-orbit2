@@ -30,12 +30,13 @@ body {
 }
 .hero-text {
 	width: 48%;
+	box-sizing: border-box;
 }
 .hero h1 {
-	padding-top: 150px;
-	padding-bottom: 40px;
-	font-size: 86px;
-	font-weight: 600;
+	padding-top: 100px;
+	padding-bottom: 30px;
+	font-size: 76px;
+	font-weight: 700;
 }
 .hero p {
 	font-size: 24px;
@@ -51,7 +52,7 @@ body {
 }
 .hero img {
 	width: 780px;
-	margin-top: -40px;
+	margin-top: -80px;
 	margin-right: 0;
 }
 
@@ -61,8 +62,11 @@ h1 {
 	margin: 0;
 	font-weight: 600;
 }
+
 .burgundy {
-	padding-left: 250px;
+	display: flex;
+	margin: 0 auto;
+	margin-left: 80px;
 	padding-top: 120px;
 	color: #93132a;
 }
