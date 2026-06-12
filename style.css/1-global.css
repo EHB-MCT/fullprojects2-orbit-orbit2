@@ -1,4 +1,4 @@
-/* Typography  -  Buttons  -  colors  */
+/* Typography - Buttons - Colors */
 
 @import url("2-navigation.css");
 @import url("3-kaart.css");
@@ -23,37 +23,62 @@ body {
 	overflow-x: hidden;
 }
 
+/* HERO DESKTOP */
+
 .hero {
+	width: 90%;
+	max-width: 1500px;
+
+	margin: 0 auto;
+
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
+	justify-content: center;
+	align-items: center;
+
+	gap: 280px;
 }
+
 .hero-text {
-	width: 48%;
-	box-sizing: border-box;
+	flex: 0 0 470px;
+	max-width: 470px;
+	z-index: 2;
+	padding-left: 0;
 }
+
 .hero h1 {
-	padding-top: 100px;
-	padding-bottom: 30px;
-	font-size: 76px;
+	margin: 0 0 34px;
+	font-size: clamp(64px, 5vw, 88px);
 	font-weight: 700;
+	line-height: 1.05;
 }
+
 .hero p {
-	font-size: 24px;
+	font-size: clamp(22px, 1.35vw, 27px);
+	line-height: 1.28;
 }
+
+.hero-img {
+	flex: 0 0 700px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.hero img {
+	width: 100%;
+	max-width: 700px;
+	display: block;
+}
+
+/* GENERAL */
 
 .wrapper {
 	width: 90%;
 	margin: 0 auto;
 }
+
 .hexagone1 .wrapper {
 	width: 100%;
-	margin: 0;
-}
-.hero img {
-	width: 780px;
-	margin-top: -80px;
-	margin-right: 0;
 }
 
 h1 {
@@ -82,24 +107,10 @@ h1 {
 	width: 48%;
 	padding-bottom: 100px;
 }
+
 .item img {
 	width: 100%;
 }
-
-/*.Armoede {
-	justify-content: space-around;
-	flex-wrap: wrap;
-	display: flex;
-}
-
-.Armoede img {
-	align-items: right;
-	width: 600px;
-	padding-left: 700px;
-	flex-wrap: wrap;
-	display: flex;
-	justify-content: space-around;
-} */
 
 .Armoede-I h1 {
 	color: #93132a;
@@ -114,9 +125,10 @@ h1 {
 	color: #ffc629;
 	padding-bottom: 50px;
 }
+
 .wrapper2 {
-	justify-content: space-between;
-	display: flex;
-	margin: 0 auto;
 	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
 }
