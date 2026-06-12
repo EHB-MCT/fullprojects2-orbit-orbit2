@@ -22,13 +22,11 @@ img {
 .wrapper2,
 .info {
 	width: 90%;
-	max-width: 1200px;
 	margin: 0 auto;
 }
 
 .kaart {
 	width: 100%;
-	max-width: 1200px;
 }
 
 /* HEXAGONS */
@@ -128,13 +126,11 @@ body .hexagone4 {
 	.wrapper2,
 	.info {
 		width: 90%;
-		max-width: 1200px;
 		margin: 0 auto;
 	}
 
 	.kaart {
 		width: 100%;
-		max-width: 1200px;
 	}
 
 	/* HEXAGONS */
