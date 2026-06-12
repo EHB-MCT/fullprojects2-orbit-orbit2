@@ -30,3 +30,11 @@
 	margin-bottom: 100px;
 	width: 100%;
 }
+
+.hexagone5 {
+	background-color: #ffc629;
+	min-height: 1500px;
+	padding-top: 150px;
+	clip-path: polygon(0 120px, 50% 0, 100% 120px, 100% calc(100% - 120px), 50% 100%, 0 calc(100% - 120px));
+	margin-bottom: -300px;
+}
