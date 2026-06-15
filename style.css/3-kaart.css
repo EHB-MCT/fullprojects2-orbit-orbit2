@@ -23,3 +23,35 @@
 	color: white;
 	font-size: 20px !important;
 }
+
+/*lijst*/
+
+.dropdown button {
+	background-color: #f5333f;
+	color: white;
+	font-size: 24px;
+	font-weight: 600;
+	width: 100%;
+	padding: 15px;
+	border: none;
+	cursor: pointer;
+}
+
+.dropdown a {
+	display: block;
+	color: black;
+	text-decoration: none;
+	padding: 15px;
+}
+
+.dropdown .list {
+	display: none;
+	position: absolute;
+	width: 100%;
+	background-color: hsl(0, 0%, 95%);
+	box-shadow: 5px;
+}
+
+.dropdown:hover .list {
+	display: block;
+}
