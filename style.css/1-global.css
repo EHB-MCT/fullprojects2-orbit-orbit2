@@ -128,3 +128,13 @@ h1 {
 	display: flex;
 	justify-content: space-between;
 }
+
+.wrapper3 {
+	width: 90%;
+	margin: 0 auto;
+	background-color: red;
+}
+
+.SecondDivider {
+	align-items: center;
+}
