@@ -29,17 +29,15 @@ body {
 	margin: 0 auto;
 
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-
-	gap: 280px;
 }
 
 .hero-text {
 	flex: 0 0 470px;
 	max-width: 470px;
 	z-index: 2;
-	padding-left: 0;
+	padding-left: 40px;
 }
 
 .hero h1 {
@@ -57,13 +55,10 @@ body {
 .hero-img {
 	flex: 0 0 700px;
 	display: flex;
-	justify-content: flex-end;
-	align-items: center;
 }
 
 .hero img {
 	width: 100%;
-	display: block;
 }
 
 /* GENERAL */
@@ -127,4 +122,14 @@ h1 {
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
+}
+
+.wrapper3 {
+	width: 90%;
+	margin: 0 auto;
+	background-color: red;
+}
+
+.SecondDivider {
+	align-items: center;
 }
