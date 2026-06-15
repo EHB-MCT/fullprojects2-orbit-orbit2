@@ -9,14 +9,13 @@
 	padding: 20px;
 	background-color: #fff;
 	overflow-x: hidden;
-	position: fixed;
 	z-index: 3;
 	box-sizing: border-box;
 }
 
 .navigation li {
 	display: inline;
-    padding-right: 20px;
+	padding-right: 20px;
 }
 
 .navigation ul {
@@ -37,7 +36,6 @@
 	text-transform: uppercase;
 	font-size: large;
 	font-weight: 800;
-	
 }
 
 .navigation span {
