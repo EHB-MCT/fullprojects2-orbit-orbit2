@@ -96,7 +96,12 @@ body .hexagone4 {
 	display: none;
 }
 
-.nav-toggle,
+.nav-toggle {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
 .hamburger {
 	display: none;
 }
@@ -139,9 +144,10 @@ body .hexagone4 {
 /* MOBILE */
 @media (max-width: 768px) {
 	.navigation {
+		position: relative;
 		top: 0;
 		left: 0;
-		z-index: 20;
+		z-index: 1000;
 		width: 100%;
 		min-height: 88px;
 		height: auto;
@@ -158,6 +164,8 @@ body .hexagone4 {
 	.navigation > a:first-child {
 		display: flex;
 		align-items: center;
+		position: relative;
+		z-index: 1002;
 	}
 
 	.logo {
@@ -177,7 +185,9 @@ body .hexagone4 {
 		line-height: 1;
 		color: black;
 		cursor: pointer;
-		z-index: 22;
+		position: relative;
+		z-index: 1002;
+		user-select: none;
 	}
 
 	.navigation nav {
@@ -190,6 +200,7 @@ body .hexagone4 {
 		background-color: white;
 		border: none;
 		box-shadow: none;
+		z-index: 1001;
 	}
 
 	.nav-toggle:checked ~ nav {
@@ -274,6 +285,25 @@ body .hexagone4 {
 		margin: 0 auto;
 		font-size: clamp(19px, 5vw, 20px);
 		line-height: 1.28;
+	}
+
+	.map {
+		width: 100%;
+		max-width: 100%;
+		overflow: hidden;
+		text-align: center;
+	}
+
+	.map .burgundy {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		padding: 60px 0 20px;
+		font-size: clamp(28px, 8vw, 34px);
+		line-height: 1.1;
+		text-align: center;
+		justify-content: initial;
+		transform: none;
 	}
 
 	body .hexagone2 {
@@ -383,6 +413,62 @@ body .hexagone4 {
 		margin: 0 auto;
 	}
 
+		/* ECOLOGIE PAGE */
+	.wrapper2 {
+		width: 100%;
+		max-width: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0;
+	}
+
+	.wrapper2 .item {
+		width: 100%;
+		max-width: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 70px;
+		margin: 0 auto;
+	}
+
+	.wrapper2 .item:first-child {
+		order: 2;
+	}
+
+	.wrapper2 .item:nth-child(2) {
+		order: 1;
+	}
+
+	.wrapper2 .item img {
+		width: clamp(82vw, 83vw, 84vw);
+		max-width: 520px;
+		min-width: 0;
+		margin: 0 auto;
+	}
+
+	.wrapper2 .item p {
+		width: clamp(82vw, 83vw, 84vw);
+		max-width: 500px;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	.ecologie {
+		width: 100%;
+		text-align: center;
+	}
+
+	.ecologie h1 {
+		width: 100%;
+		margin: 0 auto clamp(18px, 4vw, 20px);
+		padding: 0;
+		font-size: clamp(44px, 12vw, 48px);
+		line-height: 1;
+		text-align: center;
+	}
+
 	.waarom {
 		width: 100%;
 		padding-left: 0;
@@ -399,13 +485,6 @@ body .hexagone4 {
 	h1 {
 		font-size: clamp(31px, 9vw, 38px);
 		text-align: center;
-	}
-
-	.burgundy {
-		margin-left: 0;
-		padding-top: 60px;
-		font-size: clamp(28px, 8vw, 34px);
-		justify-content: center;
 	}
 
 	.themas {
