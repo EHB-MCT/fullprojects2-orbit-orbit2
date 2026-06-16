@@ -115,7 +115,10 @@ h1 {
 	color: #ffc629;
 	padding-bottom: 50px;
 }
-
+.focus {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
 .wrapper2 {
 	width: 90%;
 	margin: 0 auto;
