@@ -2,15 +2,10 @@
 	position: relative;
 	background-color: white;
 	padding: 20px;
-	max-width: 600px;
+	max-width: 90%;
 	color: black;
 	padding-left: 80px;
 	margin-top: 60px;
-}
-
-.waarom {
-	align-items: right;
-	padding-left: 50px;
 }
 
 .themas {

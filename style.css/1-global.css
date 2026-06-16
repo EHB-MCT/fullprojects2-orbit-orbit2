@@ -34,10 +34,9 @@ body {
 }
 
 .hero-text {
-	flex: 0 0 470px;
-	max-width: 470px;
 	z-index: 2;
-	padding-left: 40px;
+	padding-left: 80px;
+	padding-right: 20px;
 }
 
 .hero h1 {
@@ -100,7 +99,7 @@ h1 {
 }
 
 .item img {
-	width: 100%;
+	width: 90%;
 }
 
 .Armoede-I h1 {
@@ -116,7 +115,10 @@ h1 {
 	color: #ffc629;
 	padding-bottom: 50px;
 }
-
+.focus {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
 .wrapper2 {
 	width: 90%;
 	margin: 0 auto;
