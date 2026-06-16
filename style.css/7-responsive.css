@@ -139,7 +139,6 @@ body .hexagone4 {
 /* MOBILE */
 @media (max-width: 768px) {
 	.navigation {
-		position: fixed;
 		top: 0;
 		left: 0;
 		z-index: 20;
@@ -236,14 +235,11 @@ body .hexagone4 {
 		text-align: center;
 		width: 100%;
 		max-width: none;
-		gap: 0;
-		padding: 0;
 		margin: 0 auto;
 	}
 
 	body .hero-text {
 		width: 100%;
-		max-width: 360px;
 		margin: 0 auto;
 		padding: 0 20px;
 	}
@@ -254,7 +250,7 @@ body .hexagone4 {
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
-		margin: -220px calc(50% - 50vw) 0;
+		margin-top: -150px;
 		overflow: hidden;
 		clip-path: polygon(0 0, 100% 0, 100% calc(100% - 95px), 50% 100%, 0 calc(100% - 95px));
 	}
