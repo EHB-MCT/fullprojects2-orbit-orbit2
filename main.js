@@ -2,6 +2,9 @@ const popup = document.getElementById("popup");
 const popupTitle = document.getElementById("popupTitle");
 const popupContent = document.getElementById("popupContent");
 const popupImage = document.getElementById("popupImage");
+const dropdownBtn = document.getElementById("dropdownBtn");
+//const dropdownList = document.querySelector(".dropdown .list");
+
 let currentImageIndex = 0;
 let currentImages = [];
 const municipalityData = {
