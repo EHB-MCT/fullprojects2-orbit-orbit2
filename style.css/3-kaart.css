@@ -55,227 +55,248 @@
     background-color: #ff4a56;
     color: white;
 }
-.mapdiv {
-	max-width: 1532px;
-	margin: auto;
+.mapdiv{
+
+    max-width: 1532px;
+    height:600px;
+    margin:auto;
 }
-.mapdiv path {
-	stroke: #000000;
-	stroke-width: 2px;
-	transition: fill 0.3s;
-}
-.mapdiv polygon {
-	stroke: #000000;
-	stroke-width: 2px;
-	transition: fill 0.3s;
+.mapdiv path{
+    stroke:#000000;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+}.mapdiv polygon{
+    stroke:#000000;
+    stroke-width: 2px;
+    transition: fill 0.3s;
 }
 .mapdiv polygon:hover,
-.mapdiv path:hover {
-	mix-blend-mode: darken;
-	transition: fill 0.3s;
-	fill-opacity: 0.5;
+.mapdiv path:hover{
+
+    mix-blend-mode: darken;
+     transition: fill 0.3s;
+     fill-opacity: 0.5;
 }
-.mapdivVlaamsBR {
-	width: 75%;
-	height: 75%;
-	margin: auto;
+.mapdivVlaamsBR{
+
+    width: 75%;
+    height:75%;
+    margin:auto;
 }
-.mapdivVlaamsBR path {
-	stroke: #000000;
-	stroke-width: 2px;
-	transition: fill 0.5s;
+.mapdivVlaamsBR path{
+    stroke:#000000;
+    stroke-width: 2px;
+    transition: fill 0.5s;
 }
-.mapdivVlaamsBR polygon {
-	stroke: #000000;
-	stroke-width: 2px;
-	transition: fill 0.5s;
+.mapdivVlaamsBR polygon{
+    stroke:#000000;
+    stroke-width: 2px;
+    transition: fill 0.5s;
 }
 .mapdivVlaamsBR path:hover,
-.mapdivVlaamsBR polygon:hover {
-	mix-blend-mode: darken;
-	transition: fill 0.3s;
-	fill-opacity: 0.5;
+.mapdivVlaamsBR polygon:hover{
+
+    mix-blend-mode: darken;
+     transition: fill 0.3s;
+     fill-opacity: 0.5;
 }
-.mapdivBrussel {
-	width: 50%;
-	margin: auto;
+.mapdivBrussel{
+
+ width: 50%;
+    margin:auto;
+
 }
 .mapdivBrussel path:hover,
-.mapdivBrussel polygon:hover {
-	mix-blend-mode: darken;
-	transition: fill 0.3s;
-	fill-opacity: 0.5;
+.mapdivBrussel polygon:hover{
+    mix-blend-mode: darken;
+     transition: fill 0.3s;
+     fill-opacity: 0.5;
+     
 }
-.mapdivBrussel path {
-	stroke: #000000;
-	stroke-width: 2px;
-	transition: fill 0.3s;
+.mapdivBrussel path{
+    stroke:#000000;
+    stroke-width: 2px;
+    transition: fill 0.3s;
 }
-.mapdivBrussel polygon {
-	stroke: #000000;
-	stroke-width: 2px;
-	transition: fill 0.3s;
+.mapdivBrussel polygon{
+    stroke:#000000;
+    stroke-width: 2px;
+    transition: fill 0.3s;
 }
 .popup {
-	display: none;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-	background: white;
-	padding: 20px;
-	border-radius: 10px;
-	border: 2px solid #333;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #333;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
 
-	z-index: 1000;
-	min-width: 300px;
+    z-index: 1000;
+    min-width: 300px;
+    
 }
-#popupTitle {
-	margin: auto;
+#popupTitle{
+    margin:auto;
 
-	color: #800020;
-	font-family: "Montserrat";
-	font-size: 48px;
+  
+    color:#800020 ;
+    font-family: "Montserrat";
+    font-size: 48px;
+
 }
-#popupContent {
-	color: #d7a008;
-	font-family: "Montserrat";
-	font-size: 24px;
+#popupContent{
+
+    color: #d7a008;
+ font-family: "Montserrat";
+    font-size: 24px;
+
 }
 #closePopup {
-	float: right;
-	cursor: pointer;
-	color: white;
-	background-color: #ff4a56;
-	border: none;
-	font-family: "Montserrat";
-	font-size: 32px;
-	height: auto;
-	width: auto;
+    float: right;
+    cursor: pointer;
+    color: white;
+    background-color: #ff4a56;
+    border: none;
+    font-family: "Montserrat";
+    font-size: 32px;
+    height: auto;
+    width: auto;
+    
 }
 #popupImage {
-	width: 75%;
-	height: auto;
-	border-radius: 5px;
-	margin: 10px 0;
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
 }
 .carousel {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 .arrow {
-	font-size: 24px;
-	padding: 10px;
-	cursor: pointer;
-	border: none;
-	background: #ff4a56;
-	color: white;
-	border-radius: 25%;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: #ff4a56;
+    color: white  ;
+    border-radius: 25%;
 }
-#homeBtn button {
-	position: fixed;
-	top: 20px;
-	left: 20px;
+#homeBtn button{
+    position: fixed;
+    top: 20px;
+    left: 20px;
 
-	padding: 10px 20px;
+    padding: 10px 20px;
 
-	border: none;
-	border-radius: 0px;
-	height: 60px;
-	width: auto;
-	cursor: pointer;
-	font-family: "Montserrat";
-	font-size: 24px;
-	background-color: #ff4a56;
-	color: #eee;
+    border: none;
+    border-radius: 0px;
+    height: 60px;
+    width:auto;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-size: 24px;
+    background-color:#ff4a56; 
+    color: #eee;
 }
-.mapdivOostVl {
-	width: 50%;
-	height: 50%;
-	margin: auto;
+.mapdivOostVl{
+
+    width: 50%;
+    height:50%;
+    margin:auto;
 }
-.mapdivOostVl path {
-	stroke: #000000;
-	stroke-width: 2px;
-	transition: fill 0.5s;
+.mapdivOostVl path{
+    stroke:#000000;
+    stroke-width: 2px;
+    transition: fill 0.5s;
 }
-.mapdivOostVl polygon {
-	stroke: #000000;
-	stroke-width: 2px;
-	transition: fill 0.5s;
+.mapdivOostVl polygon{
+    stroke:#000000;
+    stroke-width: 2px;
+    transition: fill 0.5s;
 }
 .mapdivOostVl path:hover,
-.mapdivOostVl polygon:hover {
-	mix-blend-mode: darken;
-	transition: fill 0.3s;
-	fill-opacity: 0.5;
+.mapdivOostVl polygon:hover{
+    mix-blend-mode: darken;
+     transition: fill 0.3s;
+     fill-opacity: 0.5;
+     
 }
-.mapdivAntwerpen {
-	width: 50%;
-	height: 50%;
-	margin: auto;
+.mapdivAntwerpen{
+
+    width: 50%;
+    height:50%;
+    margin:auto;
 }
-.mapdivAntwerpen path {
-	stroke: #000000;
-	stroke-width: 2px;
-	transition: fill 0.5s;
+.mapdivAntwerpen path{
+    stroke:#000000;
+    stroke-width: 2px;
+    transition: fill 0.5s;
 }
-.mapdivAntwerpen polygon {
-	stroke: #000000;
-	stroke-width: 2px;
-	transition: fill 0.5s;
+.mapdivAntwerpen polygon{
+    stroke:#000000;
+    stroke-width: 2px;
+    transition: fill 0.5s;
 }
 .mapdivAntwerpen path:hover,
-.mapdivAntwerpen polygon:hover {
-	mix-blend-mode: darken;
-	transition: fill 0.3s;
-	fill-opacity: 0.5;
+.mapdivAntwerpen polygon:hover{
+    mix-blend-mode: darken;
+     transition: fill 0.3s;
+     fill-opacity: 0.5;
+     
 }
 
-.mapdivwestVL {
-	width: 50%;
-	height: 50%;
-	margin: auto;
+.mapdivwestVL{
+
+    width: 50%;
+    height:50%;
+    margin:auto;
 }
-.mapdivwestVL path {
-	stroke: #000000;
-	stroke-width: 2px;
-	transition: fill 0.5s;
+.mapdivwestVL path{
+    stroke:#000000;
+    stroke-width: 2px;
+    transition: fill 0.5s;
 }
-.mapdivwestVL polygon {
-	stroke: #000000;
-	stroke-width: 2px;
-	transition: fill 0.5s;
+.mapdivwestVL polygon{
+    stroke:#000000;
+    stroke-width: 2px;
+    transition: fill 0.5s;
 }
 .mapdivwestVL path:hover,
-.mapdivwestVL polygon:hover {
-	mix-blend-mode: darken;
-	transition: fill 0.3s;
-	fill-opacity: 0.5;
+.mapdivwestVL polygon:hover{
+    mix-blend-mode: darken;
+     transition: fill 0.3s;
+     fill-opacity: 0.5;
+     
 }
 
-.mapdivLimburg {
-	width: 50%;
-	height: 50%;
-	margin: auto;
+.mapdivLimburg{
+
+    width: 50%;
+    height:50%;
+    margin:auto;
 }
-.mapdivLimburg path {
-	stroke: #000000;
-	stroke-width: 2px;
-	transition: fill 0.5s;
+.mapdivLimburg path{
+    stroke:#000000;
+    stroke-width: 2px;
+    transition: fill 0.5s;
 }
-.mapdivLimburg polygon {
-	stroke: #000000;
-	stroke-width: 2px;
-	transition: fill 0.5s;
+.mapdivLimburg polygon{
+    stroke:#000000;
+    stroke-width: 2px;
+    transition: fill 0.5s;
 }
 .mapdivLimburg path:hover,
-.mapdivLimburg polygon:hover {
-	mix-blend-mode: darken;
-	transition: fill 0.3s;
-	fill-opacity: 0.5;
+.mapdivLimburg polygon:hover{
+    mix-blend-mode: darken;
+     transition: fill 0.3s;
+     fill-opacity: 0.5;
+     
 }
