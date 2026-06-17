@@ -19,6 +19,7 @@
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	z-index: 5;
 }
 
 .hexagone4 {
@@ -37,4 +38,5 @@
 	clip-path: polygon(0 120px, 50% 0, 100% 120px, 100% calc(100% - 120px), 50% 100%, 0 calc(100% - 120px));
 	margin-bottom: -300px;
 	align-items: center;
+	z-index: 2;
 }
