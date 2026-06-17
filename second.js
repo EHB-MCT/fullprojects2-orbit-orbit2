@@ -4,7 +4,6 @@ const dropdownList = document.querySelector(".dropdown .list");
 dropdownBtn.addEventListener("click", () => {
 
     dropdownList.classList.toggle("show");
-    console.log("lmao");
 });
 document.addEventListener("click", (event) => {
 
