@@ -46,3 +46,25 @@
 .navigation a:hover {
 	color: #f5333f;
 }
+.breadcrumbs .active {
+	text-decoration: underline;
+}
+
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	padding-left: 40px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.breadcrumbs a,
+span {
+	color: #f5333f;
+	text-decoration: none;
+	font-weight: 600;
+	margin: 5px;
+}
+
+.breadcrumbs a:hover {
+	color: #93132a;
+}
