@@ -25,8 +25,28 @@ img {
 	margin: 0 auto;
 }
 
-.kaart {
+.kaart,
+.map {
 	width: 100%;
+}
+
+footer {
+	margin-top: auto;
+	background-color: #ffc629;
+}
+
+.navigation span {
+	display: none;
+}
+
+.nav-toggle {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.hamburger {
+	display: none;
 }
 
 /* HEXAGONS */
@@ -41,11 +61,6 @@ body .hexagone2 {
 	padding: 180px 0;
 	background-color: #ffc629;
 	clip-path: polygon(0 120px, 50% 0, 100% 120px, 100% 100%, 0 100%);
-}
-
-footer {
-	margin-top: auto;
-	background-color: #ffc629;
 }
 
 body .hexagone3 {
@@ -90,20 +105,6 @@ body .hexagone4 {
 
 .extra a {
 	color: white;
-}
-
-.navigation span {
-	display: none;
-}
-
-.nav-toggle {
-	position: absolute;
-	opacity: 0;
-	pointer-events: none;
-}
-
-.hamburger {
-	display: none;
 }
 
 /* TABLET */
@@ -179,7 +180,8 @@ body .hexagone4 {
 		gap: 40px;
 	}
 
-	.wrapper3 {
+	.wrapper3,
+	.SecondDivider {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -187,10 +189,6 @@ body .hexagone4 {
 	}
 
 	.SecondDivider {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		text-align: center;
 	}
 
@@ -210,14 +208,66 @@ body .hexagone4 {
 		margin-left: 5%;
 		font-size: 48px;
 	}
+
+	/* TABLET FIX: align "Inclusief begraven en gedenken" image lower with text */
+	#hexFive .content {
+		align-items: flex-start;
+	}
+
+	#hexFive .content .item:first-child {
+		padding-top: 0;
+	}
+
+	#hexFive .content .item:nth-child(2) {
+		padding-top: 220px;
+	}
+
+	#hexFive .content .item:nth-child(2) img {
+		margin-top: 0;
+	}
+
+	/* TABLET FIX: footer */
+	body .hexagone6 {
+		min-height: auto;
+		padding: 180px 0 70px;
+		clip-path: polygon(0 120px, 50% 0, 100% 120px, 100% 100%, 0 100%);
+	}
+
+	body .hexagone6 .info {
+		width: 90%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 50px;
+		padding-top: 0;
+	}
+
+	body .hexagone6 .info > img {
+		height: auto;
+		max-width: 220px;
+	}
+
+	body .hexagone6 .vlaanderen img {
+		height: auto;
+		max-width: 230px;
+	}
+
+	body .hexagone6 .contact img {
+		height: auto;
+		max-width: 220px;
+	}
+
+	.extra {
+		margin-top: 0;
+		border-top: none;
+	}
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
 	.navigation {
 		position: relative;
-		top: 0;
-		left: 0;
 		z-index: 1000;
 		width: 100%;
 		min-height: 88px;
@@ -232,11 +282,12 @@ body .hexagone4 {
 		box-shadow: none;
 	}
 
-	.navigation > a:first-child {
-		display: flex;
-		align-items: center;
+	.navigation > a:first-child,
+	.hamburger {
 		position: relative;
 		z-index: 1002;
+		display: flex;
+		align-items: center;
 	}
 
 	.logo {
@@ -246,8 +297,6 @@ body .hexagone4 {
 	}
 
 	.hamburger {
-		display: flex;
-		align-items: center;
 		justify-content: center;
 		margin-left: auto;
 		width: 42px;
@@ -256,8 +305,6 @@ body .hexagone4 {
 		line-height: 1;
 		color: black;
 		cursor: pointer;
-		position: relative;
-		z-index: 1002;
 		user-select: none;
 	}
 
@@ -266,12 +313,12 @@ body .hexagone4 {
 		position: absolute;
 		top: 100%;
 		left: 0;
+		z-index: 1001;
 		width: 100%;
 		padding: 16px 0 12px;
 		background-color: white;
 		border: none;
 		box-shadow: none;
-		z-index: 1001;
 	}
 
 	.nav-toggle:checked ~ nav {
@@ -288,16 +335,18 @@ body .hexagone4 {
 		margin: 0;
 	}
 
-	.navigation li {
+	.navigation li,
+	.navigation a {
 		width: 100%;
 		display: block;
-		padding: 0;
 		text-align: center;
 	}
 
+	.navigation li {
+		padding: 0;
+	}
+
 	.navigation a {
-		display: block;
-		width: 100%;
 		font-size: 16px;
 		font-weight: 800;
 		letter-spacing: 0.02em;
@@ -310,10 +359,18 @@ body .hexagone4 {
 		clip-path: polygon(0 0, 100% 0, 100% calc(100% - 95px), 50% 100%, 0 calc(100% - 95px));
 	}
 
-	body .hero {
+	body .hero,
+	.content,
+	.wrapper2,
+	.waarom,
+	.info,
+	.themas {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	body .hero {
 		text-align: center;
 		width: 100%;
 		max-width: none;
@@ -359,7 +416,6 @@ body .hexagone4 {
 	}
 
 	.map {
-		width: 100%;
 		max-width: 100%;
 		overflow: hidden;
 		text-align: center;
@@ -381,19 +437,10 @@ body .hexagone4 {
 		padding: 130px 0;
 	}
 
-	body .hexagone2 .wrapper {
+	body .hexagone2 .wrapper,
+	.wrapper2 {
 		width: 100%;
 		max-width: none;
-	}
-
-	.content,
-	.wrapper2,
-	.waarom,
-	.info,
-	.themas {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 	}
 
 	.content {
@@ -401,14 +448,26 @@ body .hexagone4 {
 		width: 100%;
 	}
 
-	.content .item {
+	.content .item,
+	.wrapper2 .item {
 		width: 100%;
 		max-width: none;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: 0;
 		margin: 0 auto;
+	}
+
+	.content .item {
+		padding: 0;
+	}
+
+	.wrapper2 {
+		gap: 0;
+	}
+
+	.wrapper2 .item {
+		padding-bottom: 70px;
 	}
 
 	.content .item:nth-child(1),
@@ -434,7 +493,8 @@ body .hexagone4 {
 		order: 2;
 	}
 
-	.content .item:nth-child(4) {
+	.content .item:nth-child(4),
+	.wrapper2 .item:first-child {
 		order: 3;
 	}
 
@@ -450,60 +510,6 @@ body .hexagone4 {
 		order: 6;
 	}
 
-	.content .item h1,
-	.waarom h1 {
-		width: 100%;
-		margin: 0 auto clamp(18px, 4vw, 20px);
-		padding: 0;
-		font-size: clamp(44px, 12vw, 48px);
-		line-height: 1;
-		text-align: center;
-	}
-
-	.textbox {
-		width: clamp(82vw, 83vw, 84vw);
-		max-width: 500px;
-		margin: 0 auto;
-		padding: clamp(24px, 6vw, 28px);
-		background-color: white;
-		color: black;
-	}
-
-	.textbox p {
-		padding: 0;
-		margin: 0;
-		font-size: clamp(17px, 4vw, 18px);
-		line-height: 1.45;
-		text-align: left;
-	}
-
-	.content .item img {
-		width: clamp(82vw, 83vw, 84vw);
-		max-width: 520px;
-		min-width: 0;
-		margin: 0 auto;
-	}
-
-		/* ECOLOGIE PAGE */
-	.wrapper2 {
-		width: 100%;
-		max-width: none;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 0;
-	}
-
-	.wrapper2 .item {
-		width: 100%;
-		max-width: none;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-bottom: 70px;
-		margin: 0 auto;
-	}
-
 	.wrapper2 .item:first-child {
 		order: 2;
 	}
@@ -512,6 +518,57 @@ body .hexagone4 {
 		order: 1;
 	}
 
+	.content .item h1,
+	.waarom h1,
+	.ecologie h1 {
+		width: 100%;
+		margin: 0 auto clamp(18px, 4vw, 20px);
+		padding: 0;
+		font-size: clamp(44px, 12vw, 48px);
+		line-height: 1;
+		text-align: center;
+	}
+
+	.textbox,
+	.textbox2 {
+		box-sizing: border-box;
+		color: black;
+	}
+
+	.textbox {
+		width: clamp(82vw, 83vw, 84vw);
+		max-width: 500px;
+		margin: 0 auto;
+		padding: clamp(24px, 6vw, 28px);
+		background-color: white;
+	}
+
+	.textbox2 {
+		width: 82vw;
+		max-width: 500px;
+		margin: 0 auto 90px;
+		padding: clamp(24px, 6vw, 34px);
+	}
+
+	.textbox p,
+	.textbox2 p,
+	.eindzin p {
+		margin: 0;
+	}
+
+	.textbox p {
+		padding: 0;
+		font-size: clamp(17px, 4vw, 18px);
+		line-height: 1.45;
+		text-align: left;
+	}
+
+	.textbox2 p {
+		font-size: clamp(16px, 4.2vw, 18px);
+		line-height: 1.35;
+	}
+
+	.content .item img,
 	.wrapper2 .item img {
 		width: clamp(82vw, 83vw, 84vw);
 		max-width: 520px;
@@ -526,22 +583,13 @@ body .hexagone4 {
 		text-align: left;
 	}
 
-	.ecologie {
+	.ecologie,
+	.waarom {
 		width: 100%;
-		text-align: center;
-	}
-
-	.ecologie h1 {
-		width: 100%;
-		margin: 0 auto clamp(18px, 4vw, 20px);
-		padding: 0;
-		font-size: clamp(44px, 12vw, 48px);
-		line-height: 1;
 		text-align: center;
 	}
 
 	.waarom {
-		width: 100%;
 		padding-left: 0;
 	}
 
@@ -599,8 +647,22 @@ body .hexagone4 {
 		line-height: 1.6;
 	}
 
+	.eindzin {
+		width: 84vw;
+		max-width: 500px;
+		margin: 0 auto;
+		padding-top: 90px;
+		padding-bottom: 180px;
+		line-height: 1.5;
+		text-align: center;
+	}
+
+	.eindzin p {
+		font-size: clamp(16px, 4vw, 18px);
+	}
+
 	body .hexagone3 {
-		padding-top: 130px;
+		padding-top: 180px;
 		padding-bottom: 90px;
 	}
 
@@ -641,6 +703,34 @@ body .hexagone4 {
 
 	.extra a {
 		color: black;
+	}
+
+	.focus {
+		font-size: clamp(24px, 13vw, 42px);
+		line-height: 1.05;
+		text-align: center;
+		padding: 30px 15px;
+		word-break: break-word;
+	}
+
+	.SecondDivider h1 {
+		width: 100%;
+		max-width: 90vw;
+		margin: 0 auto 30px;
+		padding: 0 12px;
+		font-size: clamp(34px, 12vw, 52px);
+		line-height: 1.05;
+		text-align: center;
+		word-break: break-word;
+		overflow-wrap: break-word;
+	}
+
+	.hexagone5 {
+		padding-bottom: 250px;
+	}
+
+	footer {
+		margin-top: 0;
 	}
 }
 
@@ -693,4 +783,45 @@ body .hexagone4 {
 	.hexagone6 {
 		padding-top: 100px;
 	}
+
+	.focus {
+		font-size: clamp(22px, 12vw, 36px);
+	}
+
+	.SecondDivider h1 {
+		font-size: clamp(30px, 11vw, 42px);
+	}
+
+	.textbox2 {
+		width: 84vw;
+		margin-bottom: 110px;
+		padding: 26px;
+	}
+
+	.eindzin {
+		padding-bottom: 230px;
+	}
+
+	.hexagone5 {
+		padding-bottom: 320px;
+	}
+
+	body .hexagone3 {
+		padding-top: 220px;
+	}
+
+	footer {
+		margin-top: 0;
+	}
+}
+
+footer,
+body .hexagone6,
+.extra {
+	background-color: #ee3442;
+}
+
+.extra {
+	margin-top: -1px;
+	border-top: 0;
 }
