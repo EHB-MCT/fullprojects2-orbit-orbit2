@@ -58,7 +58,7 @@
 .mapdiv{
 
     max-width: 1532px;
-    height:600px;
+    max-height:600px;
     margin:auto;
 }
 .mapdiv path{
