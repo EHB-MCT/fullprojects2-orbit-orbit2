@@ -618,4 +618,8 @@ body .hexagone4 {
 	.thema {
 		max-width: 340px;
 	}
+
+	.hexagone6 {
+		padding-top: 100px;
+	}
 }

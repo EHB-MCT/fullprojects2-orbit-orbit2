@@ -40,3 +40,13 @@
 	align-items: center;
 	z-index: 2;
 }
+
+.hexagone6 {
+	background-color: #ee3442;
+	min-height: 650px;
+	clip-path: polygon(0 120px, 50% 0, 100% 120px, 100% 100%, 0 100%);
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	z-index: 5;
+}
