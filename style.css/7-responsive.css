@@ -120,19 +120,90 @@ body .hexagone4 {
 		font-size: 20px;
 	}
 
-	.item {
-		width: 48%;
+	.content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 120px 40px;
+		width: 100%;
+	}
+
+	.content .item,
+	.wrapper2 .item {
+		width: calc(50% - 20px);
+		box-sizing: border-box;
+	}
+
+	.content .item:nth-child(4) {
+		order: 3;
+	}
+
+	.content .item:nth-child(3) {
+		order: 4;
+	}
+
+	.content .item:nth-child(2),
+	.content .item:nth-child(3),
+	.content .item:nth-child(6),
+	.wrapper2 .item:first-child {
+		padding-top: 105px;
+	}
+
+	.content .item h1,
+	.waarom h1,
+	.ecologie h1 {
+		font-size: 64px;
+		line-height: 1;
+		margin: 0 0 40px;
+		text-align: center;
+	}
+
+	.waarom {
+		padding-left: 0;
 	}
 
 	.textbox {
-		max-width: 100%;
-		padding-left: 40px;
+		max-width: 430px;
+		padding: 40px;
+		box-sizing: border-box;
+	}
+
+	.content .item img,
+	.wrapper2 .item img {
+		max-width: 500px;
 	}
 
 	.wrapper2 {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 40px;
+	}
+
+	.wrapper3 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.SecondDivider {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.SecondDivider h1 {
+		width: 100%;
+		text-align: center;
+	}
+
+	.textbox2 {
+		width: 78%;
+		max-width: 800px;
+		margin: 0 auto;
+		box-sizing: border-box;
 	}
 
 	.burgundy {
