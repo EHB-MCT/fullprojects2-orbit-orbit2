@@ -68,3 +68,8 @@ span {
 .breadcrumbs a:hover {
 	color: #93132a;
 }
+
+.icon-B img {
+	width: 20px;
+	height: 20px;
+}
