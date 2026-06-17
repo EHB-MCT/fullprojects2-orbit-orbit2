@@ -55,8 +55,7 @@
 	background-color: #ffc629;
 }
 .mapdiv {
-	max-width: 1532px;
-	height: 600px;
+	width: 90%;
 	margin: auto;
 }
 .mapdiv path {
