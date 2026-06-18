@@ -389,7 +389,7 @@ body .hexagone4 {
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
-		margin-top: -150px;
+		margin-top: -20px;
 		overflow: hidden;
 		clip-path: polygon(0 0, 100% 0, 100% calc(100% - 95px), 50% 100%, 0 calc(100% - 95px));
 	}
@@ -698,11 +698,11 @@ body .hexagone4 {
 
 	.extra {
 		background-color: white;
-		color: black;
+		color: white;
 	}
 
 	.extra a {
-		color: black;
+		color: white;
 	}
 
 	.focus {
@@ -731,6 +731,12 @@ body .hexagone4 {
 
 	footer {
 		margin-top: 0;
+	}
+
+	.breadcrumbs {
+		font-size: clamp(12px, 14vw, 14px);
+		text-align: center;
+		padding: 30px 15px;
 	}
 }
 
@@ -812,6 +818,12 @@ body .hexagone4 {
 
 	footer {
 		margin-top: 0;
+	}
+
+	.breadcrumbs {
+		font-size: clamp(12px, 14vw, 14px);
+		text-align: center;
+		padding: 30px 15px;
 	}
 }
 
