@@ -209,7 +209,6 @@ body .hexagone4 {
 		font-size: 48px;
 	}
 
-	/* TABLET FIX: align "Inclusief begraven en gedenken" image lower with text */
 	#hexFive .content {
 		align-items: flex-start;
 	}
@@ -261,6 +260,10 @@ body .hexagone4 {
 	.extra {
 		margin-top: 0;
 		border-top: none;
+	}
+
+	.UitdagingenOplossingen {
+		padding-bottom: 30px;
 	}
 }
 
@@ -738,6 +741,8 @@ body .hexagone4 {
 		text-align: center;
 		padding: 30px 15px;
 	}
+
+	
 }
 
 /* SMALL PHONES */
